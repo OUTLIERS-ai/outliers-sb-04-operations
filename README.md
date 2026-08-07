@@ -1,53 +1,51 @@
-# Outliers Second Brain - Layer 4 - Operations
+# Part 4 of 4 - Operations
 
-You have assistants that can read your material, form a view, and write. They run when you ask,
-in whatever order you happen to ask, with nothing standing between them and another person.
+## The problem
 
-A system left running fails quietly by default. It carries on, reports success, produces nothing,
-and there is nobody sitting beside you to notice.
+Everything in it works, and all of it works when you sit down and start it. Which means you have
+not built a system. You have built a tool, and you are still operating it.
 
-## Install it
+You forget it exists for a week at a time. You set something running and have no idea whether it
+still runs. You cannot tell whether it did nothing because there was nothing to do, or because it
+broke a fortnight ago. Something once opened a window in the middle of your afternoon and you
+turned it off and never turned it back on.
+
+## Why it happens
+
+Nothing runs unless you start it, and nothing tells you when it stops.
+
+The second half is worse than it sounds. A job that ran and produced nothing looks exactly like a
+job that had nothing to do. Both are silent. Mine ran sixty-four times, produced nothing every
+time, and reported success.
+
+## What this does about it
+
+A timetable, a gate, a record, and one list each morning.
 
     python install.py
 
-Add `--no-schedule` to install everything without putting the morning list on a timetable.
+Add --no-schedule to install everything without putting the morning list on a clock. It needs
+Parts 1 to 3 - this arranges things that already work, so there has to be something to arrange.
 
-## What it needs beneath it
+Then:
 
-Layers 1 to 3. This layer arranges things that already work, so there has to be something to
-arrange.
+    python _engine/today.py       the morning list
+    python _engine/ledger.py      what has happened, most recent last
 
-## What you end up with
+## Why this way and not another
 
-| Thing | What it does |
-|---|---|
-| `_engine/today.py` | One short list each morning, ordered by what changed, each line saying why it is there |
-| `_engine/ledger.py` | The record of what happened. Added to, never rewritten |
-| `Areas/The gate.md` | The rule that nothing reaches another person without your hand on it |
-| A timetable | The morning list runs on a clock, with no window and no interruption |
+- It runs out of sight. The most common reason automation stops working is that somebody turned it
+  off because it was annoying them.
+- The gate is in the machinery, not in an assistant instructions. Instructions are the first thing
+  a busy system stops reading.
+- Nothing marks its own homework. Whatever wrote a thing does not approve it.
+- Silence is not evidence that things are fine, so the last thing installed is a comparison between
+  what should be true and what is.
 
-## Why it runs out of sight
+## What it still does not do
 
-A job that opens a window while you are working gets switched off within a week, and a job that
-is off is a job that is not running. On Windows the timetable points at a launcher that runs the
-work invisibly rather than at Python directly.
+Nothing further to install. What changes is that it starts telling you things, and what it tells
+you sends you back to the earlier parts.
 
-This is not a detail. It is the difference between automation you keep and automation you
-disable.
-
-## The gate
-
-Anything intended for another person is written, checked by something other than the thing that
-wrote it, and then stops. You send it.
-
-It lives in the machinery rather than in an assistant's instructions, because instructions are
-what a busy system stops reading first.
-
-## What this layer leaves unsolved
-
-Nothing further to install. What changes is that the system starts telling you things, and what
-it tells you goes back down the ladder: a rule that keeps misfiring gets rewritten in Layer 2, a
-source that never produces anything useful gets dropped in Layer 3.
-
-The other thing that changes is what you can build on top. A foundation that remembers, keeps
-itself honest, fills itself and runs without watching is the ground another system stands on.
+The other thing that changes is what you can build on top. Something that remembers, keeps itself
+honest, fills itself and runs without watching is solid enough for the next thing to stand on.
